@@ -10,7 +10,7 @@ require('dotenv').config();
 export const signup = async(req: Request, res: Response) => {
     try{
 
-        const {name, email, password} = req.body;
+        const {username, email, password} = req.body;
 
         const userRepository = AppDataSource.getRepository(User);
 
@@ -32,7 +32,7 @@ export const signup = async(req: Request, res: Response) => {
 
         // create the user
         const user = userRepository.create({
-            name,
+            username,
             email,
             password: hashedPassword,
         })
@@ -51,12 +51,12 @@ export const signup = async(req: Request, res: Response) => {
 
 export const login = async (req: Request, res: Response) => {
     try {
-        const { email, password } = req.body;
+        const { username, password } = req.body;
 
         const userRepository = AppDataSource.getRepository(User);
 
         // Check for registered user
-        const user = await userRepository.findOne({ where: { email: email } });
+        const user = await userRepository.findOne({ where: { username: username } });
 
         // If user is not registered
         if (!user) {
