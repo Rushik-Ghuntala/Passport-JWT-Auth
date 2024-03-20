@@ -34,3 +34,12 @@ AppDataSource.initialize()
         console.log("Error while Connecting Database...", err);
     })
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+//heellooo
+=======
+// helo honey boney
+// hello darling 
+>>>>>>> dev
+>>>>>>> stage
