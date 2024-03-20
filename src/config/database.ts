@@ -12,9 +12,11 @@ interface ConfigType {
     database: string,
 }   
 
+const PG_PORT = process.env.POSTGRES_PORT ? process.env.POSTGRES_PORT : 5432
+
 const postgresConfig: ConfigType = {
     host: process.env.POSTGRES_HOST as string,
-    port: process.env.POSTGRES_PORT as any,
+    port: PG_PORT as number,
     username: process.env.POSTGRES_USERNAME as string,
     password: process.env.POSTGRES_PASSWORD as string,
     database: process.env.POSTGRES_DATABASE as string,
