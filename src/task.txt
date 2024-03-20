@@ -5,4 +5,14 @@
 
 -- kaam 3 puru
 
+<<<<<<< HEAD
 -- production done
+=======
+20 march 
+
+-- kam 1 puru 
+
+-- kam 2 puru
+
+-- kam 3 puru
+>>>>>>> stage

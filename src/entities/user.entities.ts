@@ -18,3 +18,5 @@ export class User {
     @Column({ nullable: true }) 
     token?: string; 
 }
+
+// rpoduction done che vala
