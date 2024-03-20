@@ -34,5 +34,3 @@ AppDataSource.initialize()
         console.log("Error while Connecting Database...", err);
     })
 
-//heellooohhhhh
-//hithihi
